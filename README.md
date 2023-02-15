@@ -1,5 +1,7 @@
 # smarty-switch
 
+![](https://github.com/Xeranor/vs-code-smarty-switch/actions/workflows/main.yml/badge.svg)
+
 This extensions enables switching between .php and their corresponding .tpl files.
 
 ## ToDo
