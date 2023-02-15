@@ -4,7 +4,7 @@ This extensions enables switching between .php and their corresponding .tpl file
 
 ## ToDo
 
-[] Implement switching from tpl to php
+- [ ] Implement switching from tpl to php
 
 ## Configuration
 
