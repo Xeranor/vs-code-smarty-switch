@@ -2,7 +2,13 @@
   "name": "smarty-switch",
   "displayName": "smarty-switch",
   "description": "A plugin to switch between smarty templates and php files",
-  "version": "0.0.1",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Xeranor/vs-code-smarty-switch.git"
+  },
+  "author": "Jonas Schulz",
+  "url": "http://jschulz.de",
   "engines": {
     "vscode": "^1.75.0"
   },
