@@ -24,20 +24,10 @@
     {
       "title": "Smarty Switch",
       "properties": {
-        "smarty-switch.tplFileExtension": {
-          "type": "string",
-          "default": ".tpl",
-          "description": "The extension of the smarty template files"
-        },
         "smarty-switch.templateFolder": {
           "type": "string",
           "default": "./templates",
           "description": "The name of the folder where the smarty templates are stored"
-        },
-        "smarty-switch.phpFileExtension": {
-          "type": "string",
-          "default": ".php",
-          "description": "The extension of the php files"
         }
       }
     }
