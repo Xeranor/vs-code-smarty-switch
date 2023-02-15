@@ -1,6 +1,6 @@
 import * as vscode from "vscode";
 
-const pattern = /define\s*\(\s*'TEMPLATE'\s*,\s*'(.*?)(?=\')/;
+const pattern = /define\s*\(\s*'TEMPLATE'\s*,\s*'(.*?)(?=')/;
 
 function find_template(editor: vscode.TextEditor) {
   const match = pattern.exec(editor.document.getText());
@@ -12,7 +12,7 @@ function find_template(editor: vscode.TextEditor) {
 
 export function activate(context: vscode.ExtensionContext) {
   const config = vscode.workspace.getConfiguration("smarty-switch");
-  let disposable = vscode.commands.registerCommand(
+  const disposable = vscode.commands.registerCommand(
     "smarty-switch.findTplFile",
     () => {
       const editor = vscode.window.activeTextEditor;
@@ -44,13 +44,14 @@ export function activate(context: vscode.ExtensionContext) {
         );
         vscode.window.showTextDocument(tplPath);
       } else if (ext?.toLowerCase() === "tpl") {
-		vscode.window.showErrorMessage("Not implemented yet!");
-		return;
-	  }
+        vscode.window.showErrorMessage("Not implemented yet!");
+        return;
+      }
     }
   );
 
   context.subscriptions.push(disposable);
 }
 
+// eslint-disable-next-line @typescript-eslint/no-empty-function
 export function deactivate() {}
